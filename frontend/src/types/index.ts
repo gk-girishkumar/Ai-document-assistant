@@ -67,3 +67,9 @@ export interface DocumentUploadResponse {
   status: string;
   message: string;
 }
+
+export interface ApiError {
+  detail: string;
+  status_code?: number;
+  errors?: Record<string, string[]>;
+}
